@@ -8,3 +8,4 @@ docGen/doc/*
 build.hxml
 samples/*/bin/*
 *.hxproj
+samples/demo/StablexUI_Android_demo.hxproj
