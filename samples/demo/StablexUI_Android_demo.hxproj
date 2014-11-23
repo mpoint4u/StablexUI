@@ -5,20 +5,20 @@
     <movie outputType="CustomBuild" />
     <movie input="" />
     <movie path="application.xml" />
-    <movie fps="60" />
-    <movie width="800" />
+    <movie fps="30" />
+    <movie width="320" />
     <movie height="480" />
     <movie version="1" />
     <movie minorVersion="0" />
     <movie platform="Lime" />
-    <movie background="000000" />
+    <movie background="888888" />
     <movie preferredSDK=";3;" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="C:\HaxeToolkit\haxe\lib\openfl\2,0,1" />
     <class path="C:\HaxeToolkit\haxe\lib\actuate\1,7,5" />
-    <class path="src" />
+    <class path="..\..\src" />
     <class path="C:\HaxeToolkit\haxe\lib\openfl\2,0,1\backends\flash" />
     <class path="bin\flash\haxe" />
   </classpaths>
