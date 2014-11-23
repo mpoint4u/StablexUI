@@ -100,12 +100,12 @@ class Scale extends Transition{
 
             var top = (scaleOriginY<0.0)?(w.top + w.height)/2.0:scaleOriginY;
             var left = (scaleOriginX<0.0)?(w.left + w.width)/2.0:scaleOriginX;
-/*            w.tween(this.duration, {
+            w.tween(this.duration, {
                 top    : top,
                 left   : left,
                 scaleX : 0,
                 scaleY : 0
-            }, this.easing).onComplete(this._hide, [vs, toHide, toShow, swap, {left : w.left, top : w.top, scaleX : w.scaleX, scaleY : w.scaleY}, cb]);*/
+            }, this.easing).onComplete(this._hide, [vs, toHide, toShow, swap, {left : w.left, top : w.top, scaleX : w.scaleX, scaleY : w.scaleY}, cb]);
         }else{
             if (toHide != null) {
               toHide.visible = false;
@@ -162,12 +162,12 @@ class Scale extends Transition{
             w.top  = (scaleOriginY<0.0)?(w.top  + w.height / 2):scaleOriginY;
             w.left = (scaleOriginX<0.0)?(w.left + w.width / 2):scaleOriginX;
             w.scaleX = w.scaleY = 0.0;
-/*            w.tween(this.duration, {
+            w.tween(this.duration, {
                 top    : topGoal,
                 left   : leftGoal,
                 scaleX : scaleXGoal,
                 scaleY : scaleYGoal
-            }, this.easing).onComplete(this._hide, [vs, toHide, toShow, swap, null, cb]);*/
+            }, this.easing).onComplete(this._hide, [vs, toHide, toShow, swap, null, cb]);
         }else{
             if( cb != null ) cb();
         }
