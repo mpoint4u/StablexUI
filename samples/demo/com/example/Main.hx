@@ -28,7 +28,7 @@ class Main extends ru.stablex.ui.widgets.Widget{
         Lib.current.stage.align     = StageAlign.TOP_LEFT;
         Lib.current.stage.scaleMode = StageScaleMode.NO_SCALE;
 
-        UIBuilder.saveCodeTo('C:/Users/marcus/Documents/GitHub/__forks__/StablexUI/samples/demo/bin/_genCode_');
+        //UIBuilder.saveCodeTo('C:/Users/marcus/Documents/GitHub/__forks__/StablexUI/samples/demo/bin/_genCode_');
 
         //set theme
         UIBuilder.setTheme('ru.stablex.ui.themes.android4');
