@@ -3,6 +3,8 @@ package com.example;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;
 import flash.Lib;
+import openfl.Assets;
+import openfl.display.FPS;
 import ru.stablex.ui.UIBuilder;
 
 
@@ -46,16 +48,26 @@ class Main extends ru.stablex.ui.widgets.Widget{
         //Create our UI
         UIBuilder.buildFn('ui/index.xml')().show();
 
-        // // FPS counter {
-        //     var fps : flash.display.FPS = cast Lib.current.stage.addChild(new flash.display.FPS());
-        //     var format = new flash.text.TextFormat (flash.Assets.getFont ("ui/android/fonts/regular.ttf").fontName, 12, 0xFFFFFF);
-        //     fps.defaultTextFormat = format;
-        //     fps.selectable = false;
-        //     fps.embedFonts = true;
-        //     fps.x = 0;
-        //     fps.y = 0;
-        //     fps.mouseEnabled = false;
-        // //}
+         // FPS counter {
+             //var fps : flash.display.FPS = cast Lib.current.stage.addChild(new flash.display.FPS());
+			 
+			 var fps:FPS = cast Lib.current.stage.addChild(new FPS());
+			 
+             //var format = new flash.text.TextFormat (flash.Assets.getFont ("ui/android/fonts/regular.ttf").fontName, 12, 0xFFFFFF);
+             
+			 var format = new flash.text.TextFormat(Assets.getFont("ui/android/fonts/regular.ttf").fontName, 12, 0xFFFF00);
+			 
+			 fps.defaultTextFormat = format;
+             fps.selectable = false;
+             fps.embedFonts = true;
+             //fps.x = 0;
+             
+			 fps.x = Lib.current.stage.stageWidth - 50;
+			 
+			 
+			 fps.y = 0;
+             fps.mouseEnabled = false;
+         //}
     }//function main()
 
 
