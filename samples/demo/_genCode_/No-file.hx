@@ -1,0 +1,21 @@
+(function(){
+ru.stablex.ui.UIBuilder.skins.set("popup", ru.stablex.ui.themes.android4.Skins.popup);
+ru.stablex.ui.UIBuilder.skins.set("BlackGradient1", ru.stablex.ui.themes.android4.Skins.BlackGradient1);
+ru.stablex.ui.UIBuilder.skins.set("buttonHovered", ru.stablex.ui.themes.android4.Skins.buttonHovered);
+ru.stablex.ui.UIBuilder.skins.set("hr", ru.stablex.ui.themes.android4.Skins.hr);
+ru.stablex.ui.UIBuilder.skins.set("DarkGray", ru.stablex.ui.themes.android4.Skins.DarkGray);
+ru.stablex.ui.UIBuilder.skins.set("switcher", ru.stablex.ui.themes.android4.Skins.switcher);
+ru.stablex.ui.UIBuilder.skins.set("tabPressed", ru.stablex.ui.themes.android4.Skins.tabPressed);
+ru.stablex.ui.UIBuilder.skins.set("BlackBlueStripe", ru.stablex.ui.themes.android4.Skins.BlackBlueStripe);
+ru.stablex.ui.UIBuilder.skins.set("Black1", ru.stablex.ui.themes.android4.Skins.Black1);
+ru.stablex.ui.UIBuilder.skins.set("buttonPressed", ru.stablex.ui.themes.android4.Skins.buttonPressed);
+ru.stablex.ui.UIBuilder.skins.set("tab", ru.stablex.ui.themes.android4.Skins.tab);
+ru.stablex.ui.UIBuilder.skins.set("progress", ru.stablex.ui.themes.android4.Skins.progress);
+ru.stablex.ui.UIBuilder.skins.set("switchSliderOn", ru.stablex.ui.themes.android4.Skins.switchSliderOn);
+ru.stablex.ui.UIBuilder.skins.set("switchSliderOff", ru.stablex.ui.themes.android4.Skins.switchSliderOff);
+ru.stablex.ui.UIBuilder.skins.set("pressed", ru.stablex.ui.themes.android4.Skins.pressed);
+ru.stablex.ui.UIBuilder.skins.set("button", ru.stablex.ui.themes.android4.Skins.button);
+ru.stablex.ui.UIBuilder.skins.set("progressBar", ru.stablex.ui.themes.android4.Skins.progressBar);
+ru.stablex.ui.UIBuilder.skins.set("tabActive", ru.stablex.ui.themes.android4.Skins.tabActive);
+ru.stablex.ui.UIBuilder.skins.set("optionsBg", ru.stablex.ui.themes.android4.Skins.optionsBg);
+ru.stablex.ui.UIBuilder.skins.set("LightGray", ru.stablex.ui.themes.android4.Skins.LightGray);})()
