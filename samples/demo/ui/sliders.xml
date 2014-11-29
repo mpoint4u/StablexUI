@@ -4,7 +4,7 @@
 <Scroll name="'sliders'" defaults="'Screen,Level1'">
     <VBox widthPt="100" childPadding="30" paddingTop="20">
         <Slider widthPt="90" h="18"/>
-        <Slider defaults="'Rect'" widthPt="90"/>
-        <Slider defaults="'Haxe'" widthPt="90"/>
+        <Slider defaults="'Rect'" widthPt="80"/>
+        <Slider defaults="'Haxe'" widthPt="50"/>
     </VBox>
 </Scroll>
