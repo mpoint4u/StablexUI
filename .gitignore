@@ -7,5 +7,7 @@ docGen/doc/*
 *.zip
 build.hxml
 samples/*/bin/*
+samples/*/.idea/*
+samples/*/*.iml
 *.hxproj
 samples/demo/StablexUI_Android_demo.hxproj
