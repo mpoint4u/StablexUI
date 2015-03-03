@@ -4,7 +4,7 @@
     <meta title="StablexUI samples: 05_custom_widget" package="ru.stablex.ui" version="0.0.1" company="R.U.N" />
     <app path="./bin" file="05_custom_widget" main="Main" />
 
-    <window width="800" height="600" background="0xCCAACC" fps="60"/>
+    <window width="480" height="800" background="0x6C7B8B" fps="60"/>
 
     <source name="../../src/" />
 

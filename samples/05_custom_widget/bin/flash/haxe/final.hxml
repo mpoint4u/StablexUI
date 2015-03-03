@@ -13,6 +13,6 @@
 5000
 -swf-version 11.2
 -swf ./bin/flash/bin/05_custom_widget.swf
--swf-header 800:600:60:CCAACC
+-swf-header 480:800:60:6C7B8B
 -cp ./bin/flash/haxe
 -D final
