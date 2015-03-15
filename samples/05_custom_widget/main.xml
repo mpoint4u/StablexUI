@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<HBox padding="20" childPadding="20">
-    <ColorWidget id="'custom'" w="200" h="100" color="0x0000FF" />
-    <Button text="'set random color'" skin:Paint-color="0xD613D6" on-click="
-        #ColorWidget(custom).color = Std.random(0xFFFFFF);
-        #custom.refresh();
-    "/>
-</HBox>
+<VBox>
+	
+	<HBox padding="20" childPadding="20">
+	    <ColorWidget id="'custom'" w="200" h="100" color="0x00DDFF" />
+	    <Button text="'set random color'" skin:Paint-color="0xFF00FF" on-click="
+	        #ColorWidget(custom).color = Std.random(0xFFFFFF);
+	        #custom.refresh();
+	    "/>
+	</HBox>
+	<Text text="'some better text'" />
+</VBox>
