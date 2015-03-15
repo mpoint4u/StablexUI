@@ -1,0 +1,4 @@
+haxelib run lime build  /Users/marcus/DEV/github_repos/__forks__/stablexui/samples/05_custom_widget/build.xml  flash -web -debug —connect 5000
+
+
+haxelib run lime build  /Users/marcus/DEV/github_repos/__forks__/stablexui/samples/05_custom_widget/build.xml  flash -debug
