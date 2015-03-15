@@ -3,11 +3,11 @@
 <VBox>
 	
 	<HBox padding="20" childPadding="20">
-	    <ColorWidget id="'custom'" w="200" h="100" color="0x00DDFF" />
-	    <Button text="'set random color'" skin:Paint-color="0xbb67ff" on-click="
+	    <ColorWidget id="'custom'" w="250" h="150" color="0xCCDDCC" />
+	    <Button text="'set random color'" skin:Paint-color="0xCC77CC" on-click="
 	        #ColorWidget(custom).color = Std.random(0xFFFFFF);
 	        #custom.refresh();
 	    "/>
 	</HBox>
-	<Text text="'some Cool Widget text'" />
+	<Text text="'some really cool Widget text'" />
 </VBox>
