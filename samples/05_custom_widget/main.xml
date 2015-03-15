@@ -9,5 +9,5 @@
 	        #custom.refresh();
 	    "/>
 	</HBox>
-	<Text text="'some better text'" />
+	<Text text="'some Cool Widget text'" />
 </VBox>
