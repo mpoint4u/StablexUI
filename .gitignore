@@ -7,4 +7,5 @@ docGen/doc/*
 *.zip
 build.hxml
 .idea/*
+samples/*/.idea/*
 *.trl
