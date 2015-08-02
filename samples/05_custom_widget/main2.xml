@@ -16,7 +16,7 @@
 	</HBox>
 	<HBox childPadding="15">
 		<ColorWidget color="0x0000FF" h="100" id="'custom3'" w="100"></ColorWidget>
-		<Button text="'set third widget bg-color'" skin:Paint-color="0xFF0C92" on-click="
+		<Button text="'set third widget bg-color'" skin:Paint-color="0xFFFFFF" on-click="
 			#ColorWidget(custom3).color = Std.random(0xFFFFFF);
 			#custom3.refresh();
 			"/>
