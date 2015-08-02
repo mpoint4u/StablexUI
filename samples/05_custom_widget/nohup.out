@@ -8,3 +8,64 @@
 (firefox:11305): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::display after class was initialised
 
 (firefox:11305): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::default-icon after class was initialised
+
+(process:26150): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+(process:1250): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+(firefox:1250): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::sm-connect after class was initialised
+
+(firefox:1250): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::show-crash-dialog after class was initialised
+
+(firefox:1250): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::display after class was initialised
+
+(firefox:1250): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::default-icon after class was initialised
+ERROR console.error: web_clipper: 
+  Unsupported OS
+  Linux
+ERROR console.error: web_clipper: 
+  Cannot load native lib
+console.error: web_clipper: 
+  Unsupported OS
+
+(process:4937): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+(firefox:4937): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::sm-connect after class was initialised
+
+(firefox:4937): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::show-crash-dialog after class was initialised
+
+(firefox:4937): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::display after class was initialised
+
+(firefox:4937): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::default-icon after class was initialised
+ERROR console.error: web_clipper: 
+  Unsupported OS
+  Linux
+ERROR console.error: web_clipper: 
+  Cannot load native lib
+console.error: web_clipper: 
+  Unsupported OS
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+libGL error: MESA-LOADER: could not create udev device for fd 28
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[7346:7346:0802/162014:ERROR:account_tracker.cc(306)] OnGetTokenFailure: Invalid credentials.
+[7346:7346:0802/162014:ERROR:account_tracker.cc(306)] OnGetTokenFailure: Invalid credentials.
+[WARNING:flash/platform/pepper/pep_module.cpp(63)] SANDBOXED
+[7346:7428:0802/162015:ERROR:get_updates_processor.cc(240)] PostClientToServerMessage() failed during GetUpdates
+[7346:7346:0802/162015:ERROR:extension_downloader.cc(696)] Invalid URL: '' for extension odjhmhblbhohkbkgnjmaheebagaphjol
+Fontconfig error: Cannot load default config file
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+libGL error: MESA-LOADER: could not create udev device for fd 33
+[WARNING:flash/platform/pepper/pep_module.cpp(63)] SANDBOXED
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[7640:7640:0802/162139:ERROR:account_tracker.cc(306)] OnGetTokenFailure: Invalid credentials.
+[7640:7640:0802/162139:ERROR:account_tracker.cc(306)] OnGetTokenFailure: Invalid credentials.
+[7640:7720:0802/162139:ERROR:get_updates_processor.cc(240)] PostClientToServerMessage() failed during GetUpdates
+[7640:7640:0802/162139:ERROR:extension_downloader.cc(696)] Invalid URL: '' for extension odjhmhblbhohkbkgnjmaheebagaphjol
+[7640:7720:0802/162909:ERROR:get_updates_processor.cc(240)] PostClientToServerMessage() failed during GetUpdates
+[7640:7720:0802/164754:ERROR:get_updates_processor.cc(240)] PostClientToServerMessage() failed during GetUpdates
+[7640:7687:0802/164756:ERROR:socket_stream.cc(214)] Closing stream with result -101
+[7640:7687:0802/164809:ERROR:connection_factory_impl.cc(354)] Failed to connect to MCS endpoint with error -137
+[7640:7687:0802/164820:ERROR:socket_stream.cc(214)] Closing stream with result -101
+[7640:7687:0802/164826:ERROR:connection_factory_impl.cc(354)] Failed to connect to MCS endpoint with error -21
+[7640:7687:0802/164833:ERROR:connection_factory_impl.cc(354)] Failed to connect to MCS endpoint with error -137
+[7640:7687:0802/164833:ERROR:connection_factory_impl.cc(354)] Failed to connect to MCS endpoint with error -137
