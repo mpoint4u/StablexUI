@@ -5,7 +5,8 @@ samples/*/build
 samples/tests/*
 docGen/doc/*
 *.zip
-build.hxml
+--build.hxml
 .idea/*
 samples/*/.idea/*
 *.trl
+samples/*/bin/flash/haxe/*
