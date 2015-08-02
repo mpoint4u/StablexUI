@@ -69,3 +69,20 @@ ATTENTION: default value of option force_s3tc_enable overridden by environment.
 [7640:7687:0802/164826:ERROR:connection_factory_impl.cc(354)] Failed to connect to MCS endpoint with error -21
 [7640:7687:0802/164833:ERROR:connection_factory_impl.cc(354)] Failed to connect to MCS endpoint with error -137
 [7640:7687:0802/164833:ERROR:connection_factory_impl.cc(354)] Failed to connect to MCS endpoint with error -137
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+libGL error: MESA-LOADER: could not create udev device for fd 33
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[WARNING:flash/platform/pepper/pep_module.cpp(63)] SANDBOXED
+[10198:10198:0802/165857:ERROR:account_tracker.cc(306)] OnGetTokenFailure: Invalid credentials.
+[10198:10198:0802/165857:ERROR:account_tracker.cc(306)] OnGetTokenFailure: Invalid credentials.
+[10198:10277:0802/165857:ERROR:get_updates_processor.cc(240)] PostClientToServerMessage() failed during GetUpdates
+[10198:10198:0802/165857:ERROR:extension_downloader.cc(696)] Invalid URL: '' for extension odjhmhblbhohkbkgnjmaheebagaphjol
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+libGL error: MESA-LOADER: could not create udev device for fd 34
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[WARNING:flash/platform/pepper/pep_module.cpp(63)] SANDBOXED
+[10460:10568:0802/165940:ERROR:get_updates_processor.cc(240)] PostClientToServerMessage() failed during GetUpdates
+[10460:10460:0802/165940:ERROR:account_tracker.cc(306)] OnGetTokenFailure: Invalid credentials.
+[10460:10460:0802/165940:ERROR:account_tracker.cc(306)] OnGetTokenFailure: Invalid credentials.
+[10460:10460:0802/165940:ERROR:extension_downloader.cc(696)] Invalid URL: '' for extension odjhmhblbhohkbkgnjmaheebagaphjol
+[10460:10513:0802/165956:ERROR:channel.cc(305)] RawChannel read error (connection broken)
