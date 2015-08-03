@@ -9,4 +9,4 @@ docGen/doc/*
 .idea/*
 samples/*/.idea/*
 *.trl
-samples/*/bin/flash/haxe/*
+samples/*/bin/*
