@@ -4,6 +4,7 @@ import flash.display.DisplayObject;
 import ru.stablex.Err;
 import ru.stablex.ui.events.WidgetEvent;
 import ru.stablex.ui.misc.SizeTools;
+import ru.stablex.ui.UIBuilder;
 
 
 /**
@@ -27,7 +28,7 @@ class Box extends Widget{
     public var childPadding : Float = 0;
     /**
     * This should be like 'left,top' or 'bottom' or 'center,middle' etc.
-    * Vertical: left, right, center. Horizontal: top, bottom, middle.
+    * Horizontal: left, right, center. Vertical: top, bottom, middle.
     * Use any other value to cancel alignment
     */
     public var align : String = 'center,middle';
@@ -41,6 +42,13 @@ class Box extends Widget{
     public var unifyChildren : Bool = false;
     /** should children' positions be convertent to int numbers? Use this to workaround problem of blurry images */
     public var intPositions : Bool = false;
+
+    /** dirty hack for new openfl */
+    #if ((openfl >= '2.0.0') && (openfl < '3.0.0') && (!flash))
+        private var lastUnifyFrame    : Int = -1;
+        private var lastUnifyChildren : Int = -1;
+        private var lastUnifyCount    : Int = 0;
+    #end
 
 /*******************************************************************************
 *       STATIC METHODS
@@ -209,6 +217,33 @@ class Box extends Widget{
 
 
     /**
+    * Set widget size based on % of parent's size (if width or height is defined in %)
+    *
+    */
+    override private function _resizeWithPercent(parent : Widget) {
+        var newWidth  = (
+            this._widthUsePercent
+                ? parent.contentWidth * this._widthPercent / 100
+                : this._width
+        );
+        var newHeight = (
+            this._heightUsePercent
+                ? parent.contentHeight * this._heightPercent / 100
+                : this._height
+        );
+
+        if (this.minWidthByContent) {
+            newWidth = Math.max(newWidth, this._calcWidth());
+        }
+        if (this.minHeightByContent) {
+            newHeight = Math.max(newHeight, this._calcHeight());
+        }
+
+        this.resize(newWidth, newHeight, true);
+    }//function _resizeWithPercent
+
+
+    /**
     * Align elements according to this.align
     *
     */
@@ -241,6 +276,19 @@ class Box extends Widget{
     *
     */
     @:noCompletion private function _unifyChildren () : Void {
+        #if ((openfl >= '2.0.0') && (openfl < '3.0.0') && (!flash))
+            if (UIBuilder.frameTime == this.lastUnifyFrame && this.numChildren == this.lastUnifyChildren && this.lastUnifyCount > 1) {
+                return;
+            }
+            if (this.lastUnifyFrame != UIBuilder.frameTime || this.numChildren != this.lastUnifyChildren) {
+                this.lastUnifyCount = 1;
+            } else {
+                this.lastUnifyCount ++;
+            }
+            this.lastUnifyFrame    = UIBuilder.frameTime;
+            this.lastUnifyChildren = this.numChildren;
+        #end
+
         var visibleChildren : Int = 0;
         for(i in 0...this.numChildren){
             if( this.getChildAt(i).visible ){
@@ -330,7 +378,7 @@ class Box extends Widget{
             height += (visibleChildren - 1) * this.childPadding;
 
             //arrange elements
-            var lastY : Float = (this.h - height) / 2;
+            var lastY : Float = (this.h - paddingTop - paddingBottom - height) / 2 + paddingTop;
 
             for(i in 0...this.numChildren){
                 child   = this.getChildAt(i);
@@ -344,7 +392,7 @@ class Box extends Widget{
             var child : DisplayObject;
             for(i in 0...this.numChildren){
                 child   = this.getChildAt(i);
-                this._setObjY(child, (this.h - this._objHeight(child)) / 2);
+                this._setObjY(child, (this.h - paddingTop - paddingBottom - this._objHeight(child)) / 2 + paddingTop);
             }
         }
     }//function _vAlignMiddle()
@@ -442,7 +490,7 @@ class Box extends Widget{
             var child : DisplayObject;
             for(i in 0...this.numChildren){
                 child   = this.getChildAt(i);
-                this._setObjX(child, (this.w - this._objWidth(child)) / 2);
+                this._setObjX(child, (this.w - paddingLeft - paddingRight - this._objWidth(child)) / 2 + paddingLeft);
             }
 
         //horizontal box
@@ -463,7 +511,7 @@ class Box extends Widget{
             width += (visibleChildren - 1) * this.childPadding;
 
             //arrange elements
-            var lastX : Float = (this.w - width) / 2;
+            var lastX : Float = (this.w -paddingLeft - paddingRight - width) / 2 + paddingLeft;
 
             for(i in 0...this.numChildren){
                 child   = this.getChildAt(i);
@@ -551,7 +599,11 @@ class Box extends Widget{
                     this.refresh();
                 }
             }else{
-                this.alignElements();
+                if (this.layout == null) {
+                    this.alignElements();
+                } else {
+                    this.applyLayout();
+                }
             }
         }
     }//function _onChildResize()
@@ -560,20 +612,24 @@ class Box extends Widget{
 /*******************************************************************************
 *       GETTERS / SETTERS
 *******************************************************************************/
+
     /**
-      * Get the height of the content
-      */
+    * Get the height of the content
+    *
+    */
     @:noCompletion override private function get_contentHeight() : Float {
       return h - paddingTop - paddingBottom;
     }//function get_content Height
 
-    /**
-      * Get the width of the content
-      */
 
+    /**
+    * Get the width of the content
+    *
+    */
     @:noCompletion override private function get_contentWidth() : Float {
       return w - paddingLeft - paddingRight;
     }//function get_contentWidth()
+
 
     /**
     * Setter for autoSize
