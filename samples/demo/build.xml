@@ -2,7 +2,7 @@
 <project>
 
     <meta title="StablexUI: Widgets demo" package="ru.stablex.ui" version="0.0.1" company="R.U.N" />
-    <app path="./build" file="stablexui" main="com.example.Main" />
+    <app path="./bin" file="stablexui" main="com.example.Main" />
 
     <window width="480" height="640" background="0x888888" fps="30"/>
     <window width="0" height="0" fullscreen="true" if="mobile"/>
