@@ -1,0 +1,46 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Standard to msysgit
+*.doc	 diff=astextplain
+*.DOC	 diff=astextplain
+*.docx 	 diff=astextplain
+*.DOCX 	 diff=astextplain
+*.dot  	 diff=astextplain
+*.DOT  	 diff=astextplain
+*.pdf  	 diff=astextplain
+*.PDF	 diff=astextplain
+*.rtf	 diff=astextplain
+*.RTF	 diff=astextplain
+LICENSE	 diff=astextplain
+
+# If I had a Microsoft windows specific program, I could force windows format :
+*.sln text eol=crlf
+#
+# Custom for Visual Studio
+*.cs     diff=csharp
+*.sln    merge=union
+*.csproj merge=union
+*.vbproj merge=union
+*.fsproj merge=union
+*.dbproj merge=union
+
+
+# Explicitly declare text files you want to always be normalized and 
+# converted to native line endings on checkout.
+*.html text
+*.htm  text
+*.js   text
+*.css  text
+*.php  text
+
+
+# Custom to haxe - dev with StablexUI (and similar)
+*.hxproj diff=astextplain
+*.hx	 diff=astextplain
+*.xml	 diff=astextplain
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.bpg binary
